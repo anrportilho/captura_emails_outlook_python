@@ -62,3 +62,33 @@ A extração busca pelos seguintes campos estruturados dentro do corpo do e-mail
 
 ```bash
 pip install pandas pywin32 customtkinter
+
+
+-----------------------------------------
+
+2. Executar a aplicação
+Execute o script principal com:
+
+bash
+Copiar
+Editar
+python extrator_emails.py
+A interface gráfica será carregada. Basta clicar em "Iniciar Extração" para processar os e-mails.
+
+🗂️ Saída
+Um arquivo chamado dados_extraidos_pos_sentenca.xlsx será gerado na mesma pasta do script, contendo os dados extraídos.
+
+Todos os eventos e erros são registrados no arquivo log.txt.
+
+🧑‍💻 Desenvolvedor
+Anderson Rocha
+Desenvolvedor Python apaixonado por automações jurídicas e soluções eficientes.
+📅 Abril/2025 – Versão 1.1.0
+
+📃 Licença
+Este projeto é de uso interno e profissional. Caso deseje utilizar ou adaptar para outro contexto, entre em contato com o desenvolvedor.
+
+📌 Observações
+A aplicação ignora mensagens com prefixos como RE:, FW:, ENC:, etc.
+
+A data de recebimento do e-mail é processada em string para evitar problemas de fuso horário com o win32timezone.
